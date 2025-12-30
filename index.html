@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipeline Academy: ETL Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'industrial-dark': '#0f172a',
+              'industrial-panel': '#1e293b',
+              'pipe-gray': '#475569',
+              'data-raw': '#94a3b8',
+              'data-clean': '#06b6d4',
+              'process-orange': '#f97316',
+            },
+            animation: {
+              'flow-slow': 'flow 3s linear infinite',
+              'flow-fast': 'flow 1s linear infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              flow: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(200%)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom scrollbar for code blocks */
+      .code-scroll::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      .code-scroll::-webkit-scrollbar-track {
+        background: #1e293b; 
+      }
+      .code-scroll::-webkit-scrollbar-thumb {
+        background: #475569; 
+        border-radius: 4px;
+      }
+      .code-scroll::-webkit-scrollbar-thumb:hover {
+        background: #64748b; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-industrial-dark text-slate-200 antialiased overflow-y-scroll">
+    <div id="root"></div>
+  </body>
+</html>
